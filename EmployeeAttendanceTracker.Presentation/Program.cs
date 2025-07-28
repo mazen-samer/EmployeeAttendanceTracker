@@ -1,3 +1,6 @@
+using EmployeeAttendanceTracker.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace EmployeeAttendanceTracker.Presentation
 {
     public class Program
@@ -6,10 +9,16 @@ namespace EmployeeAttendanceTracker.Presentation
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseInMemoryDatabase("EmployeeAttendanceDB"));
+
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
+
+            // Seed initial Data
+            DataSeeder.Seed(app);
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
