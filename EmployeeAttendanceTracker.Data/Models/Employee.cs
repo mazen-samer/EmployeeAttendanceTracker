@@ -17,8 +17,9 @@ namespace EmployeeAttendanceTracker.Data.Models
         public string Email { get; set; } // Must be unique [cite: 28]
 
         // Foreign key for Department
+        [Required(ErrorMessage = "Please select a department.")]
         public int DepartmentId { get; set; }
-        public Department Department { get; set; } // Navigation property [cite: 29]
+        public Department? Department { get; set; } // Navigation property [cite: 29]
 
         // Navigation property for related Attendance records
         public ICollection<Attendance> Attendances { get; set; } = new List<Attendance>();
