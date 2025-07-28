@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Attendance Tracker";
+}
+@section Scripts {
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="~/js/attendance.js"></script>
+}
+@section Head {
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+}
+
+<h1>Employee Attendance Tracker</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group mb-3">
+                    <label for="employee-select" class="form-label">Select Employee</label>
+                    <select id="employee-select" class="form-control" asp-items="ViewBag.Employees">
+                        <option value="">-- Select an Employee --</option>
+                    </select>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="attendance-date" class="form-label">Select Date</label>
+                    <input type="text" id="attendance-date" class="form-control" readonly />
+                </div>
+                <div id="attendance-status-panel" class="mt-4" style="display:none;">
+                    <h5>Attendance Status</h5>
+                    <p>Status: <strong id="status-text" class="fs-5"></strong></p>
+                    <div id="action-buttons">
+                        <button id="mark-present" class="btn btn-success">Mark as Present</button>
+                        <button id="mark-absent" class="btn btn-danger">Mark as Absent</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
