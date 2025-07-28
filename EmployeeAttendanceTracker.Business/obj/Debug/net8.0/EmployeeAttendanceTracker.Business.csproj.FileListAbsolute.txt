@@ -1,0 +1,16 @@
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\bin\Debug\net8.0\EmployeeAttendanceTracker.Business.deps.json
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\bin\Debug\net8.0\EmployeeAttendanceTracker.Business.dll
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\bin\Debug\net8.0\EmployeeAttendanceTracker.Business.pdb
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\bin\Debug\net8.0\EmployeeAttendanceTracker.Data.dll
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\bin\Debug\net8.0\EmployeeAttendanceTracker.Data.pdb
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.csproj.AssemblyReference.cache
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.AssemblyInfoInputs.cache
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.AssemblyInfo.cs
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.csproj.CoreCompileInputs.cache
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.sourcelink.json
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\Employee.AB8BA94E.Up2Date
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.dll
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\refint\EmployeeAttendanceTracker.Business.dll
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\EmployeeAttendanceTracker.Business.pdb
+E:\Interviews\CodeZone\EmployeeAttendanceTracker\EmployeeAttendanceTracker.Business\obj\Debug\net8.0\ref\EmployeeAttendanceTracker.Business.dll

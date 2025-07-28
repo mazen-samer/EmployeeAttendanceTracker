@@ -1,4 +1,6 @@
+using EmployeeAttendanceTracker.Business.Services;
 using EmployeeAttendanceTracker.Data;
+using EmployeeAttendanceTracker.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeAttendanceTracker.Presentation
@@ -14,6 +16,9 @@ namespace EmployeeAttendanceTracker.Presentation
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
             var app = builder.Build();
 

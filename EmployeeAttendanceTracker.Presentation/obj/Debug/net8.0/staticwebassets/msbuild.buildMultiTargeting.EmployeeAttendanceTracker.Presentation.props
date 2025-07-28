@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EmployeeAttendanceTracker.Presentation.props" />
+</Project>
