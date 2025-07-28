@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4mbctx4uhw</Fingerprint>
-      <Integrity>NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y=</Integrity>
+      <Fingerprint>ehr11rddjk</Fingerprint>
+      <Integrity>Yj563zxswphXgKeNdx8RQyrBaV8WVNzFi6mpMhHCHPM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\attendance.js'))</OriginalItemSpec>

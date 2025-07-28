@@ -48,5 +48,21 @@ namespace EmployeeAttendanceTracker.Business.Services
 
             return (true, string.Empty);
         }
+        public async Task<(bool Success, string ErrorMessage)> DeleteAttendanceAsync(int employeeId, DateTime date)
+        {
+            if (date.Date > DateTime.Today)
+            {
+                return (false, "Cannot modify attendance for a future date.");
+            }
+
+            var existingAttendance = await _attendanceRepository.GetByEmployeeAndDateAsync(employeeId, date);
+
+            if (existingAttendance != null)
+            {
+                await _attendanceRepository.DeleteAsync(existingAttendance);
+            }
+            // If it doesn't exist, there's nothing to delete, so it's a success.
+            return (true, string.Empty);
+        }
     }
 }

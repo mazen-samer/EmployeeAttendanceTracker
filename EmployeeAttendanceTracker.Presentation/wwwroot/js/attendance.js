@@ -84,4 +84,35 @@
             }
         });
     }
+
+    $("#delete-attendance").on("click", function () {
+        const employeeId = $("#employee-select").val();
+        const date = $("#attendance-date").val();
+
+        if (!employeeId || !date) {
+            alert("Please select an employee and a date.");
+            return;
+        }
+
+        if (confirm("Are you sure you want to clear the attendance status for this date?")) {
+            $.ajax({
+                url: '/Attendances/DeleteAttendance',
+                type: 'POST',
+                data: {
+                    employeeId: employeeId,
+                    date: date
+                },
+                success: function (response) {
+                    if (response.success) {
+                        getAttendanceStatus(); // Refresh the status display
+                    } else {
+                        alert("Error: " + response.message);
+                    }
+                },
+                error: function () {
+                    alert("An error occurred while deleting the attendance record.");
+                }
+            });
+        }
+    });
 });

@@ -50,5 +50,17 @@ namespace EmployeeAttendanceTracker.Presentation.Controllers
 
             return Json(new { success = true });
         }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteAttendance(int employeeId, DateTime date)
+        {
+            var result = await _attendanceService.DeleteAttendanceAsync(employeeId, date);
+            if (!result.Success)
+            {
+                return Json(new { success = false, message = result.ErrorMessage });
+            }
+
+            return Json(new { success = true });
+        }
     }
 }

@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31934B93-EB73-43E5-93AE-0C8CA6524F24}|EmployeeAttendanceTracker.Data\\EmployeeAttendanceTracker.Data.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31934B93-EB73-43E5-93AE-0C8CA6524F24}|EmployeeAttendanceTracker.Data\\EmployeeAttendanceTracker.Data.csproj|solutionrelative:employeeattendancetracker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.presentation\\wwwroot\\js\\attendance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|solutionrelative:employeeattendancetracker.presentation\\wwwroot\\js\\attendance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.presentation\\views\\attendances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|solutionrelative:employeeattendancetracker.presentation\\views\\attendances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.presentation\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|solutionrelative:employeeattendancetracker.presentation\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F7D41DD-8C3A-48D8-B7A9-C2E7986E381D}|EmployeeAttendanceTracker.Business\\EmployeeAttendanceTracker.Business.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.business\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F7D41DD-8C3A-48D8-B7A9-C2E7986E381D}|EmployeeAttendanceTracker.Business\\EmployeeAttendanceTracker.Business.csproj|solutionrelative:employeeattendancetracker.business\\services\\attendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F7D41DD-8C3A-48D8-B7A9-C2E7986E381D}|EmployeeAttendanceTracker.Business\\EmployeeAttendanceTracker.Business.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.business\\services\\interfaces\\iattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F7D41DD-8C3A-48D8-B7A9-C2E7986E381D}|EmployeeAttendanceTracker.Business\\EmployeeAttendanceTracker.Business.csproj|solutionrelative:employeeattendancetracker.business\\services\\interfaces\\iattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31934B93-EB73-43E5-93AE-0C8CA6524F24}|EmployeeAttendanceTracker.Data\\EmployeeAttendanceTracker.Data.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.data\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31934B93-EB73-43E5-93AE-0C8CA6524F24}|EmployeeAttendanceTracker.Data\\EmployeeAttendanceTracker.Data.csproj|solutionrelative:employeeattendancetracker.data\\repositories\\attendancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31934B93-EB73-43E5-93AE-0C8CA6524F24}|EmployeeAttendanceTracker.Data\\EmployeeAttendanceTracker.Data.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31934B93-EB73-43E5-93AE-0C8CA6524F24}|EmployeeAttendanceTracker.Data\\EmployeeAttendanceTracker.Data.csproj|solutionrelative:employeeattendancetracker.data\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.presentation\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|solutionrelative:employeeattendancetracker.presentation\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.presentation\\views\\attendances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|solutionrelative:employeeattendancetracker.presentation\\views\\attendances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|e:\\interviews\\codezone\\employeeattendancetracker\\employeeattendancetracker.presentation\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D70C4EB-F227-4671-B7DB-CB8FD031DB4B}|EmployeeAttendanceTracker.Presentation\\EmployeeAttendanceTracker.Presentation.csproj|solutionrelative:employeeattendancetracker.presentation\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +70,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "AttendanceService.cs",
+              "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Business\\Services\\AttendanceService.cs",
+              "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Business\\Services\\AttendanceService.cs",
+              "ToolTip": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Business\\Services\\AttendanceService.cs",
+              "RelativeToolTip": "EmployeeAttendanceTracker.Business\\Services\\AttendanceService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAwwEIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T21:08:49.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IAttendanceService.cs",
+              "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Business\\Services\\Interfaces\\IAttendanceService.cs",
+              "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Business\\Services\\Interfaces\\IAttendanceService.cs",
+              "ToolTip": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Business\\Services\\Interfaces\\IAttendanceService.cs",
+              "RelativeToolTip": "EmployeeAttendanceTracker.Business\\Services\\Interfaces\\IAttendanceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T21:08:18.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AttendanceRepository.cs",
+              "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Data\\Repositories\\AttendanceRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Data\\Repositories\\AttendanceRepository.cs",
+              "ToolTip": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Data\\Repositories\\AttendanceRepository.cs",
+              "RelativeToolTip": "EmployeeAttendanceTracker.Data\\Repositories\\AttendanceRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T21:07:56.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Data\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Data\\Repositories\\EmployeeRepository.cs",
@@ -71,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Presentation\\Views\\Shared\\_Layout.cshtml",
@@ -79,12 +130,11 @@
               "RelativeToolTip": "EmployeeAttendanceTracker.Presentation\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-28T20:51:37.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T20:51:37.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Presentation\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -96,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Error.cshtml",
               "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Presentation\\Views\\Shared\\Error.cshtml",
@@ -108,37 +158,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\Views\\Attendances\\Index.cshtml",
               "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Presentation\\Views\\Attendances\\Index.cshtml",
               "ToolTip": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\Views\\Attendances\\Index.cshtml",
               "RelativeToolTip": "EmployeeAttendanceTracker.Presentation\\Views\\Attendances\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-28T20:50:47.226Z"
+              "WhenOpened": "2025-07-28T20:50:47.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "AttendancesController.cs",
               "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\Controllers\\AttendancesController.cs",
               "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Presentation\\Controllers\\AttendancesController.cs",
               "ToolTip": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\Controllers\\AttendancesController.cs",
               "RelativeToolTip": "EmployeeAttendanceTracker.Presentation\\Controllers\\AttendancesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T20:48:39.024Z"
+              "WhenOpened": "2025-07-28T20:48:39.024Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "attendance.js",
               "DocumentMoniker": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
               "RelativeDocumentMoniker": "EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
               "ToolTip": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
               "RelativeToolTip": "EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAmwFYAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAwwHQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-07-28T20:48:34.238Z",
               "EditorCaption": ""
