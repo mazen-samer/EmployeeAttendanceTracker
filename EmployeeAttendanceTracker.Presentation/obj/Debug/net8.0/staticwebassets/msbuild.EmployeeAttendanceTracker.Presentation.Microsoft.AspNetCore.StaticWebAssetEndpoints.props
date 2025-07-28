@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 13:14:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/EmployeeAttendanceTracker.Presentation/js/attendance.4mbctx4uhw.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\attendance.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4mbctx4uhw"},{"Name":"integrity","Value":"sha256-NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y="},{"Name":"label","Value":"_content/EmployeeAttendanceTracker.Presentation/js/attendance.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2949"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 20:57:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EmployeeAttendanceTracker.Presentation/js/attendance.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\attendance.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2524"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 20:48:47 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/EmployeeAttendanceTracker.Presentation/js/attendance.kqsgybwzy5.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\attendance.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kqsgybwzy5"},{"Name":"integrity","Value":"sha256-fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU="},{"Name":"label","Value":"_content/EmployeeAttendanceTracker.Presentation/js/attendance.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2524"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 20:48:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2949"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 20:57:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/EmployeeAttendanceTracker.Presentation/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

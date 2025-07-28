@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Go/GvVzKLCCNZabjkmKnKRQdkP6tXq9Gp3emakUgsFM=",
+  "Hash": "4/GGTczZf5898jMSzCUnX9ml7yZpKKQLQu7aoCUojYo=",
   "Source": "EmployeeAttendanceTracker.Presentation",
   "BasePath": "_content/EmployeeAttendanceTracker.Presentation",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kqsgybwzy5",
-      "Integrity": "fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=",
+      "Fingerprint": "4mbctx4uhw",
+      "Integrity": "NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\attendance.js"
@@ -1670,6 +1670,51 @@
       ]
     },
     {
+      "Route": "js/attendance.4mbctx4uhw.js",
+      "AssetFile": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 20:57:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4mbctx4uhw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/attendance.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y="
+        }
+      ]
+    },
+    {
       "Route": "js/attendance.js",
       "AssetFile": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
       "Selectors": [],
@@ -1680,7 +1725,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2524"
+          "Value": "2949"
         },
         {
           "Name": "Content-Type",
@@ -1688,11 +1733,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=\""
+          "Value": "\"NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 20:48:47 GMT"
+          "Value": "Mon, 28 Jul 2025 20:57:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1702,52 +1747,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU="
-        }
-      ]
-    },
-    {
-      "Route": "js/attendance.kqsgybwzy5.js",
-      "AssetFile": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2524"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Jul 2025 20:48:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "kqsgybwzy5"
-        },
-        {
-          "Name": "label",
-          "Value": "js/attendance.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU="
+          "Value": "sha256-NBl45dnZXYP7SdM/N9AODPOB1kSUIvns2N0hKcteE7Y="
         }
       ]
     },

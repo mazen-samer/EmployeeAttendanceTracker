@@ -1,40 +1,49 @@
 ﻿$(function () {
-    // Initialize the datepicker calendar [cite: 39]
-    $("#attendance-date").datepicker({
-        dateFormat: "yy-mm-dd",
-        maxDate: 0, // Disable future dates [cite: 41, 64]
-        onSelect: function () {
-            getAttendanceStatus(); // Fetch status when a new date is selected
-        }
-    });
-
-    // Event handler for when the employee dropdown changes
-    $("#employee-select").on("change", function () {
-        getAttendanceStatus();
-    });
-
+    // This function will be the main trigger for all our logic
     function getAttendanceStatus() {
         const employeeId = $("#employee-select").val();
         const date = $("#attendance-date").val();
 
-        // Only proceed if both an employee and a date are selected
+        // If either field is empty, hide the status panel and do nothing else.
         if (!employeeId || !date) {
             $("#attendance-status-panel").hide();
             return;
         }
 
+        // If we have both values, show the panel and make the AJAX call.
         $("#attendance-status-panel").show();
 
-        // AJAX call to the controller to get the status
         $.ajax({
             url: '/Attendances/GetAttendanceStatus',
             type: 'GET',
             data: { employeeId: employeeId, date: date },
             success: function (response) {
-                [cite_start]$("#status-text").text(response.status); // Update the status text on the page [cite: 42]
+                $("#status-text").text(response.status).removeClass('text-danger');
+                if (response.status === 'Future Date') {
+                    $("#status-text").addClass('text-danger');
+                    $("#action-buttons").hide();
+                } else {
+                    $("#action-buttons").show();
+                }
+            },
+            error: function () {
+                alert("An error occurred while fetching the attendance status.");
             }
         });
     }
+
+    // Initialize the datepicker calendar
+    $("#attendance-date").datepicker({
+        dateFormat: "yy-mm-dd",
+        maxDate: 0, // Disable future dates
+        onSelect: getAttendanceStatus // Call our main function when a date is selected
+    });
+
+    // Call our main function when the employee dropdown changes
+    $("#employee-select").on("change", getAttendanceStatus);
+
+
+    // --- The rest of the file remains the same ---
 
     // Event handler for the "Mark as Present" button
     $("#mark-present").on("click", function () {
@@ -55,7 +64,6 @@
             return;
         }
 
-        // AJAX call to record the attendance
         $.ajax({
             url: '/Attendances/RecordAttendance',
             type: 'POST',
@@ -66,11 +74,13 @@
             },
             success: function (response) {
                 if (response.success) {
-                    // Refresh the status display after successfully recording
                     getAttendanceStatus();
                 } else {
                     alert("Error: " + response.message);
                 }
+            },
+            error: function () {
+                alert("An error occurred while recording attendance.");
             }
         });
     }

@@ -39,7 +39,10 @@ namespace EmployeeAttendanceTracker.Data.Repositories
         public async Task<IEnumerable<Employee>> GetAllEmployeesAsync()
         {
             // Include Department to display the department name in the list
-            return await _context.Employees.Include(e => e.Department).ToListAsync();
+            return await _context.Employees
+                .Include(e => e.Department)
+                .Include(e => e.Attendances)
+                .ToListAsync();
         }
 
         public async Task<Employee?> GetEmployeeByIdAsync(int employeeCode)
