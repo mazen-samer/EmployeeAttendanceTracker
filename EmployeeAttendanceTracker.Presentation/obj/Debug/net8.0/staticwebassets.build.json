@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mzmjYrgXcp9dIK8rb3Jk0I3AnF2zfMlfMlgV6SeOXZM=",
+  "Hash": "Go/GvVzKLCCNZabjkmKnKRQdkP6tXq9Gp3emakUgsFM=",
   "Source": "EmployeeAttendanceTracker.Presentation",
   "BasePath": "_content/EmployeeAttendanceTracker.Presentation",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
+      "SourceId": "EmployeeAttendanceTracker.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\",
+      "BasePath": "_content/EmployeeAttendanceTracker.Presentation",
+      "RelativePath": "js/attendance#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kqsgybwzy5",
+      "Integrity": "fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\attendance.js"
     },
     {
       "Identity": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\site.js",
@@ -1645,6 +1666,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/attendance.js",
+      "AssetFile": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 20:48:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU="
+        }
+      ]
+    },
+    {
+      "Route": "js/attendance.kqsgybwzy5.js",
+      "AssetFile": "E:\\Interviews\\CodeZone\\EmployeeAttendanceTracker\\EmployeeAttendanceTracker.Presentation\\wwwroot\\js\\attendance.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 20:48:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kqsgybwzy5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/attendance.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fCPjSE4wDtV5YIHAYZaWw27/eBQKMEJn7VZBMo20zDU="
         }
       ]
     },
