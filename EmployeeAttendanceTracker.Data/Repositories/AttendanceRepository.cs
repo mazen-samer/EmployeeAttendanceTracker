@@ -12,6 +12,36 @@ namespace EmployeeAttendanceTracker.Data.Repositories
             _context = context;
         }
 
+        public async Task<IEnumerable<Attendance>> GetFilteredAsync(int? departmentId, int? employeeId, DateTime? startDate, DateTime? endDate)
+        {
+            var query = _context.Attendances
+                .Include(a => a.Employee)
+                .ThenInclude(e => e.Department)
+                .AsQueryable();
+
+            if (departmentId.HasValue)
+            {
+                query = query.Where(a => a.Employee.DepartmentId == departmentId.Value);
+            }
+
+            if (employeeId.HasValue)
+            {
+                query = query.Where(a => a.EmployeeId == employeeId.Value);
+            }
+
+            if (startDate.HasValue)
+            {
+                query = query.Where(a => a.Date.Date >= startDate.Value.Date);
+            }
+
+            if (endDate.HasValue)
+            {
+                query = query.Where(a => a.Date.Date <= endDate.Value.Date);
+            }
+
+            return await query.OrderByDescending(a => a.Date).ToListAsync();
+        }
+
         public async Task<Attendance?> GetByEmployeeAndDateAsync(int employeeId, DateTime date)
         {
             return await _context.Attendances

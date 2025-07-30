@@ -64,5 +64,12 @@ namespace EmployeeAttendanceTracker.Business.Services
             // If it doesn't exist, there's nothing to delete, so it's a success.
             return (true, string.Empty);
         }
+
+        // ADD THIS METHOD to your AttendanceService class
+
+        public async Task<IEnumerable<Attendance>> GetFilteredAttendanceAsync(int? departmentId, int? employeeId, DateTime? startDate, DateTime? endDate)
+        {
+            return await _attendanceRepository.GetFilteredAsync(departmentId, employeeId, startDate, endDate);
+        }
     }
 }
