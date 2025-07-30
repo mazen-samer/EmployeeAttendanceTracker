@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using EmployeeAttendanceTracker.Data.Models;
+﻿using EmployeeAttendanceTracker.Data.Models;
 using EmployeeAttendanceTracker.Data.Repositories;
 
 namespace EmployeeAttendanceTracker.Business.Services
@@ -12,16 +11,11 @@ namespace EmployeeAttendanceTracker.Business.Services
         {
             _departmentRepository = departmentRepository;
         }
-
         public async Task<(bool Success, string ErrorMessage)> CreateDepartmentAsync(Department department)
         {
-            // Business Rule: Validate department code format [cite: 16]
-            if (!Regex.IsMatch(department.DepartmentCode, @"^[A-Z]{4}$"))
-            {
-                return (false, "Department Code must be exactly 4 uppercase alphabetic characters.");
-            }
+            // The Regex check that was here is now removed.
 
-            // Business Rule: Prevent duplicate department names or codes [cite: 18]
+            // Business Rule: Prevent duplicate department names or codes.
             if (await _departmentRepository.DepartmentExistsAsync(department.DepartmentName, department.DepartmentCode))
             {
                 return (false, "A department with the same name or code already exists.");
@@ -55,12 +49,6 @@ namespace EmployeeAttendanceTracker.Business.Services
 
         public async Task<(bool Success, string ErrorMessage)> UpdateDepartmentAsync(Department department)
         {
-            // Business Rule: Validate department code format [cite: 16]
-            if (!Regex.IsMatch(department.DepartmentCode, @"^[A-Z]{4}$"))
-            {
-                return (false, "Department Code must be exactly 4 uppercase alphabetic characters.");
-            }
-
             // Business Rule: Prevent duplicate department names or codes, excluding the current department [cite: 18]
             if (await _departmentRepository.DepartmentExistsAsync(department.DepartmentName, department.DepartmentCode, department.Id))
             {

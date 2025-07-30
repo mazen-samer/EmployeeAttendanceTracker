@@ -12,7 +12,7 @@ namespace EmployeeAttendanceTracker.Data.Models
 
         [Required]
         [StringLength(4)]
-        // We will add a regular expression here later for the uppercase rule
+        [RegularExpression(@"^[A-Z]{4}$", ErrorMessage = "Department Code must be exactly 4 uppercase letters.")]
         public string DepartmentCode { get; set; } // [cite: 16]
 
         [Required]

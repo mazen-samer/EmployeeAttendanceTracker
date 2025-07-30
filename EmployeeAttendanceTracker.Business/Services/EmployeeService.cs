@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using EmployeeAttendanceTracker.Data.Models;
+﻿using EmployeeAttendanceTracker.Data.Models;
 using EmployeeAttendanceTracker.Data.Repositories;
 
 namespace EmployeeAttendanceTracker.Business.Services
@@ -61,26 +60,6 @@ namespace EmployeeAttendanceTracker.Business.Services
 
         private async Task<(bool Success, string ErrorMessage)> ValidateEmployee(Employee employee, bool isUpdate = false)
         {
-            // Business Rule: Full Name must be four names, each at least two characters, letters and spaces only. [cite: 27]
-            if (!Regex.IsMatch(employee.FullName, @"^[a-zA-Z\s]+$"))
-            {
-                return (false, "Full Name must contain only letters and spaces.");
-            }
-
-            var nameParts = employee.FullName.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            if (nameParts.Length != 4)
-            {
-                return (false, "Full Name must consist of exactly four names.");
-            }
-
-            foreach (var part in nameParts)
-            {
-                if (part.Length < 2)
-                {
-                    return (false, "Each part of the Full Name must be at least two characters long.");
-                }
-            }
-
             // Business Rule: Prevent duplicate email addresses. [cite: 29]
             int? employeeCodeToExclude = isUpdate ? employee.EmployeeCode : null;
             if (await _employeeRepository.EmailExistsAsync(employee.Email, employeeCodeToExclude))

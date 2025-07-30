@@ -10,6 +10,8 @@ namespace EmployeeAttendanceTracker.Data.Models
         public int EmployeeCode { get; set; } // System generated, cannot be edited [cite: 26]
 
         [Required]
+        [RegularExpression(@"^[A-Za-z]{2,}\s[A-Za-z]{2,}\s[A-Za-z]{2,}\s[A-Za-z]{2,}$",
+            ErrorMessage = "Full Name must consist of four names, each with at least two letters.")]
         public string FullName { get; set; } // Validation for four names will be in the Business Layer [cite: 27]
 
         [Required]
