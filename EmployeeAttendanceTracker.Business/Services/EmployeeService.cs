@@ -7,10 +7,12 @@ namespace EmployeeAttendanceTracker.Business.Services
     public class EmployeeService : IEmployeeService
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IDepartmentRepository _departmentRepository;
 
-        public EmployeeService(IEmployeeRepository employeeRepository)
+        public EmployeeService(IEmployeeRepository employeeRepository, IDepartmentRepository departmentRepository)
         {
             _employeeRepository = employeeRepository;
+            _departmentRepository = departmentRepository;
         }
 
         public async Task<IEnumerable<EmployeeSummaryDto>> GetEmployeeSummariesAsync()
@@ -94,7 +96,11 @@ namespace EmployeeAttendanceTracker.Business.Services
 
         private async Task<(bool Success, string ErrorMessage)> ValidateEmployee(Employee employee, bool isUpdate = false)
         {
-            // Business Rule: Prevent duplicate email addresses. [cite: 29]
+            var department = await _departmentRepository.GetDepartmentByIdAsync(employee.DepartmentId);
+            if (department == null)
+            {
+                return (false, "The selected department does not exist. Please refresh the page.");
+            }
             int? employeeCodeToExclude = isUpdate ? employee.EmployeeCode : null;
             if (await _employeeRepository.EmailExistsAsync(employee.Email, employeeCodeToExclude))
             {
