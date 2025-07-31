@@ -35,16 +35,33 @@ Dependency Injection is used throughout the application to decouple these layers
 
 This project is configured to run with a self-seeding, in-memory database, so no external database setup is required.
 
+### Option 1: Using Visual Studio
+
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/mazen-samer/EmployeeAttendanceTracker.git
+    git clone <your-github-repository-url>
     ```
 2.  **Open the Solution:**
     - Navigate to the project folder and open the `EmployeeAttendanceTracker.sln` file in Visual Studio 2022 or later.
 3.  **Run the Application:**
     - Set the `EmployeeAttendanceTracker.Presentation` project as the startup project.
     - Press `F5` or the "Run" button in Visual Studio.
-    - The application will build, launch a browser, and the in-memory database will be created and seeded with sample data automatically.
+
+### Option 2: Using the Command Line (CLI)
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone <your-github-repository-url>
+    ```
+2.  **Navigate to the Solution Directory:**
+    - `cd` into the root folder of the solution (the folder containing `EmployeeAttendanceTracker.sln`).
+3.  **Run the Application:**
+    - Execute the following command:
+    ```bash
+    dotnet run --project EmployeeAttendanceTracker.Presentation --launch-profile https
+    ```
+
+The application will build, launch, and be accessible at `https://localhost:7142` (or a similar address shown in the terminal). The in-memory database will be created and seeded automatically on startup.
 
 ---
 
