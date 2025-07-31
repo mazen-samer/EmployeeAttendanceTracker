@@ -26,7 +26,6 @@ namespace EmployeeAttendanceTracker.Presentation
 
             var app = builder.Build();
 
-            // Seed initial Data
             DataSeeder.Seed(app);
 
             // Configure the HTTP request pipeline.
@@ -46,7 +45,7 @@ namespace EmployeeAttendanceTracker.Presentation
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Employees}/{action=Index}/{id?}");
 
             app.Run();
         }

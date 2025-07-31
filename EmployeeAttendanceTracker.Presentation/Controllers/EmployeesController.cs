@@ -1,6 +1,5 @@
 ﻿using EmployeeAttendanceTracker.Business.Services;
 using EmployeeAttendanceTracker.Data.Models;
-using EmployeeAttendanceTracker.Presentation.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -19,35 +18,8 @@ namespace EmployeeAttendanceTracker.Presentation.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var employees = await _employeeService.GetAllEmployeesAsync();
-            var today = DateTime.Today;
-            var firstDayOfMonth = new DateTime(today.Year, today.Month, 1);
-            var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
-
-            var viewModels = employees.Select(e =>
-            {
-                var monthAttendance = e.Attendances
-                                       .Where(a => a.Date.Date >= firstDayOfMonth && a.Date.Date <= lastDayOfMonth)
-                                       .ToList();
-
-                var presentDays = monthAttendance.Count(a => a.IsPresent);
-                var absentDays = monthAttendance.Count(a => !a.IsPresent);
-                var totalDays = presentDays + absentDays;
-                var attendancePercentage = totalDays == 0 ? 0 : (double)presentDays / totalDays * 100;
-
-                return new EmployeeListViewModel
-                {
-                    EmployeeCode = e.EmployeeCode,
-                    FullName = e.FullName,
-                    Email = e.Email,
-                    DepartmentName = e.Department?.DepartmentName ?? "N/A",
-                    PresentDays = presentDays,
-                    AbsentDays = absentDays,
-                    AttendancePercentage = Math.Round(attendancePercentage, 2)
-                };
-            }).ToList();
-
-            return View(viewModels);
+            var employeeSummaries = await _employeeService.GetEmployeeSummariesAsync();
+            return View(employeeSummaries);
         }
 
         public async Task<IActionResult> Create()
@@ -93,7 +65,6 @@ namespace EmployeeAttendanceTracker.Presentation.Controllers
                 return BadRequest();
             }
 
-            // Remove validation for EmployeeCode as it's not posted from the form
             ModelState.Remove("EmployeeCode");
 
             if (ModelState.IsValid)

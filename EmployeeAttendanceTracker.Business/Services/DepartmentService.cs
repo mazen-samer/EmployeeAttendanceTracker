@@ -13,9 +13,6 @@ namespace EmployeeAttendanceTracker.Business.Services
         }
         public async Task<(bool Success, string ErrorMessage)> CreateDepartmentAsync(Department department)
         {
-            // The Regex check that was here is now removed.
-
-            // Business Rule: Prevent duplicate department names or codes.
             if (await _departmentRepository.DepartmentExistsAsync(department.DepartmentName, department.DepartmentCode))
             {
                 return (false, "A department with the same name or code already exists.");
@@ -49,7 +46,6 @@ namespace EmployeeAttendanceTracker.Business.Services
 
         public async Task<(bool Success, string ErrorMessage)> UpdateDepartmentAsync(Department department)
         {
-            // Business Rule: Prevent duplicate department names or codes, excluding the current department [cite: 18]
             if (await _departmentRepository.DepartmentExistsAsync(department.DepartmentName, department.DepartmentCode, department.Id))
             {
                 return (false, "Another department with the same name or code already exists.");

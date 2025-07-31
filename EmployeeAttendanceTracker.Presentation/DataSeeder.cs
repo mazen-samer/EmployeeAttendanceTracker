@@ -15,7 +15,8 @@ namespace EmployeeAttendanceTracker.Presentation
 
                 context.Database.EnsureCreated();
 
-                if (context.Departments.Any()) return; // DB has been seeded
+                // Check if the database has already been seeded.
+                if (context.Departments.Any()) return;
 
                 var departments = new Department[]
                 {
@@ -32,6 +33,26 @@ namespace EmployeeAttendanceTracker.Presentation
                     new Employee{FullName="Peter Benjamin Franklin Jones", Email="peter.jones@example.com", DepartmentId=1},
                 };
                 context.Employees.AddRange(employees);
+                context.SaveChanges();
+
+                // --- NEW: Seed Attendance Data ---
+                var attendances = new Attendance[]
+                {
+                    // Employee 1 (John Wick)
+                    new Attendance{EmployeeId=1, Date=DateTime.Today.AddDays(-1), IsPresent=true},
+                    new Attendance{EmployeeId=1, Date=DateTime.Today.AddDays(-2), IsPresent=true},
+                    new Attendance{EmployeeId=1, Date=DateTime.Today.AddDays(-3), IsPresent=false}, // Absent
+
+                    // Employee 2 (Jane Smith)
+                    new Attendance{EmployeeId=2, Date=DateTime.Today.AddDays(-1), IsPresent=true},
+                    new Attendance{EmployeeId=2, Date=DateTime.Today.AddDays(-2), IsPresent=true},
+                    new Attendance{EmployeeId=2, Date=DateTime.Today.AddDays(-3), IsPresent=true},
+
+                    // Employee 3 (Peter Jones)
+                    new Attendance{EmployeeId=3, Date=DateTime.Today.AddDays(-1), IsPresent=false}, // Absent
+                    new Attendance{EmployeeId=3, Date=DateTime.Today.AddDays(-2), IsPresent=true},
+                };
+                context.Attendances.AddRange(attendances);
                 context.SaveChanges();
             }
         }

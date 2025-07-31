@@ -38,7 +38,6 @@ namespace EmployeeAttendanceTracker.Data.Repositories
 
         public async Task<IEnumerable<Department>> GetAllDepartmentsAsync()
         {
-            // Eagerly load the Employees collection to get the count [cite: 19][cite_start]
             return await _context.Departments.Include(d => d.Employees).ToListAsync();
         }
 

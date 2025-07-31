@@ -1,16 +1,13 @@
 ﻿$(function () {
-    // This function will be the main trigger for all our logic
     function getAttendanceStatus() {
         const employeeId = $("#employee-select").val();
         const date = $("#attendance-date").val();
 
-        // If either field is empty, hide the status panel and do nothing else.
         if (!employeeId || !date) {
             $("#attendance-status-panel").hide();
             return;
         }
 
-        // If we have both values, show the panel and make the AJAX call.
         $("#attendance-status-panel").show();
 
         $.ajax({
@@ -32,25 +29,19 @@
         });
     }
 
-    // Initialize the datepicker calendar
     $("#attendance-date").datepicker({
         dateFormat: "yy-mm-dd",
-        maxDate: 0, // Disable future dates
-        onSelect: getAttendanceStatus // Call our main function when a date is selected
+        maxDate: 0,
+        onSelect: getAttendanceStatus
     });
 
-    // Call our main function when the employee dropdown changes
     $("#employee-select").on("change", getAttendanceStatus);
 
 
-    // --- The rest of the file remains the same ---
-
-    // Event handler for the "Mark as Present" button
     $("#mark-present").on("click", function () {
         recordAttendance(true);
     });
 
-    // Event handler for the "Mark as Absent" button
     $("#mark-absent").on("click", function () {
         recordAttendance(false);
     });
@@ -104,7 +95,7 @@
                 },
                 success: function (response) {
                     if (response.success) {
-                        getAttendanceStatus(); // Refresh the status display
+                        getAttendanceStatus();
                     } else {
                         alert("Error: " + response.message);
                     }

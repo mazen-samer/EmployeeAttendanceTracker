@@ -1,4 +1,5 @@
-﻿using EmployeeAttendanceTracker.Data.Models;
+﻿using EmployeeAttendanceTracker.Business.DTOs;
+using EmployeeAttendanceTracker.Data.Models;
 using EmployeeAttendanceTracker.Data.Repositories;
 
 namespace EmployeeAttendanceTracker.Business.Services
@@ -12,6 +13,39 @@ namespace EmployeeAttendanceTracker.Business.Services
             _employeeRepository = employeeRepository;
         }
 
+        public async Task<IEnumerable<EmployeeSummaryDto>> GetEmployeeSummariesAsync()
+        {
+            var employees = await _employeeRepository.GetAllEmployeesAsync();
+
+            var today = DateTime.Today;
+            var firstDayOfMonth = new DateTime(today.Year, today.Month, 1);
+            var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+
+            var summaries = employees.Select(e =>
+            {
+                var monthAttendance = e.Attendances
+                    .Where(a => a.Date.Date >= firstDayOfMonth && a.Date.Date <= lastDayOfMonth)
+                    .ToList();
+
+                var presentDays = monthAttendance.Count(a => a.IsPresent);
+                var absentDays = monthAttendance.Count(a => !a.IsPresent);
+                var totalDays = presentDays + absentDays;
+                var attendancePercentage = totalDays == 0 ? 0 : (double)presentDays / totalDays * 100;
+
+                return new EmployeeSummaryDto
+                {
+                    EmployeeCode = e.EmployeeCode,
+                    FullName = e.FullName,
+                    Email = e.Email,
+                    DepartmentName = e.Department?.DepartmentName ?? "N/A",
+                    PresentDays = presentDays,
+                    AbsentDays = absentDays,
+                    AttendancePercentage = Math.Round(attendancePercentage, 2)
+                };
+            }).ToList();
+
+            return summaries;
+        }
         public async Task<(bool Success, string ErrorMessage)> CreateEmployeeAsync(Employee employee)
         {
             var validationResult = await ValidateEmployee(employee);
